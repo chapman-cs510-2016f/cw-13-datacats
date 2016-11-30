@@ -147,5 +147,36 @@ void Matrix<T>:: print() const
   
 }
 
+// Multiplication of two matrices
+template<typename T>
+Matrix<T> Matrix<T>::operator*(const Matrix<T>& rhs) {
+    // Create new matrix to store result, initialize to zero
+    Matrix result(rows, cols, 0.0);
+  
+    // Add each matrix element-by-element
+    for (unsigned int i=0; i<rows; i++) {
+        for (unsigned int j=0; j<cols; j++) {
+            result(i,j) = this->mat[i][j] * rhs(i,j);
+        }
+    }
+  
+    return result;
+}
+
+// Addition of two matrices
+template<typename T>
+Matrix<T> Matrix<T>::operator+(const T& scalar) {
+    // Create new matrix to store result, initialize to zero
+    Matrix result(rows, cols, 0.0);
+  
+    // Add each matrix element-by-element
+    for (unsigned int i=0; i<rows; i++) {
+        for (unsigned int j=0; j<cols; j++) {
+            result(i,j) = this->mat[i][j] + scalar;
+        }
+    }
+  
+    return result;
+}
 
 #endif // CW13_MATRIX_CPP_
