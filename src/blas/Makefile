@@ -1,4 +1,4 @@
-all: boost_matrix
+all: new_matrix
 
 clean:
-	rm -f boost_matrix
+	rm -f new_matrix
