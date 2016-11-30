@@ -42,6 +42,8 @@ template <typename T> class Matrix {
         unsigned int get_rows() const;
         unsigned int get_cols() const;
         void print() const; 
+        Matrix<T> operator*(const Matrix<T>& rhs);
+        Matrix<T> operator+(const T& scalar);
   
 };
 
