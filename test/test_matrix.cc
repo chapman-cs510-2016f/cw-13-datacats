@@ -1,5 +1,5 @@
 #include <iostream>
-#include "matrix.h"
+#include "../src/matrix/matrix.h"
 
 int main() {
     // Define two 10x10 matrices with element types of long double
@@ -15,6 +15,8 @@ int main() {
     // Define a third matrix as the sum of the first two
     Matrix<long double> mat3 = mat1 + mat2;
   
+    mat3.print();
+    /*
     // Print out the third matrix as a text array
     for (int i=0; i<mat3.get_rows(); i++) {
         for (int j=0; j<mat3.get_cols(); j++) {
@@ -22,6 +24,6 @@ int main() {
         }
         std::cout << std::endl;
     }
-  
+  */
     return 0;
 }

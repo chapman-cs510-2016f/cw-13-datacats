@@ -4,6 +4,7 @@
 
 // include the header declarations
 #include "matrix.h"
+#include <iostream>
 
 //*************
 //
@@ -132,5 +133,19 @@ Matrix<T> Matrix<T>::operator+(const Matrix<T>& rhs) {
   
     return result;
 }
+
+//print function 
+template<typename T>
+void Matrix<T>:: print() const
+{
+    for (unsigned int i=0; i < this->get_rows(); i++) {
+        for (unsigned int j=0; j < this->get_cols(); j++) {
+            std::cout << this->mat[i][j] << "\t";
+        }
+        std::cout << std::endl;
+    }
+  
+}
+
 
 #endif // CW13_MATRIX_CPP_

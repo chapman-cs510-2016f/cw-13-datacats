@@ -41,6 +41,7 @@ template <typename T> class Matrix {
         // Accessor methods for row and column sizes
         unsigned int get_rows() const;
         unsigned int get_cols() const;
+        void print() const; 
   
 };
 
