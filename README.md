@@ -1,8 +1,8 @@
 # CS510 CW 13
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** _Simrath Rathra, Andrew Nguyen_
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-13-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-13-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-13-datacats.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-13-datacats)
 
 **Due date:** 2016/12/06
 
@@ -37,7 +37,7 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**This assignment was a good revision of everything we learned about pointers. In fact, implementing the required functions for our own implementation of matrix did not take too long to code, as we used elements of what we learned from the previous weeks. It was also good to use C++'s library to make a matrix and explore C++'s vast array of libraries. It was also good to go over templates.**
 
 ## Honor Pledge
 
@@ -48,4 +48,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Simrath Ratra, Andrew Nguyen**
