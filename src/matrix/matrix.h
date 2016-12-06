@@ -4,6 +4,7 @@
 // Most useful standard library implementation of a vector
 // Seasoned C++ programmers swear by this data structure
 #include <vector>
+#include <string>
 
 // A template allows an arbitrary type T to be passed into a class as a
 // parameter, so a single class definition can apply to different types 
@@ -44,6 +45,7 @@ template <typename T> class Matrix {
         void print() const; 
         Matrix<T> operator*(const Matrix<T>& rhs);
         Matrix<T> operator+(const T& scalar);
+        void save(std::string fn);
   
 };
 

@@ -179,4 +179,23 @@ Matrix<T> Matrix<T>::operator+(const T& scalar) {
     return result;
 }
 
+//Saves matrix to CSV file 
+template <typename T>
+void Matrix<T>::save(std::string fn)
+{
+    ofstream f(fn);
+    std::string line;
+    for (auto v: mat)
+    {
+        for (auto c: v)
+        {
+            if (str.length > 0)
+                line += ',';
+            line += std::to_string(c);
+        }
+        f << str.c_str() << '\n';
+        str = "";
+    }
+   f,close();
+}
 #endif // CW13_MATRIX_CPP_
