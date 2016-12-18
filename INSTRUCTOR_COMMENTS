@@ -1,0 +1,2 @@
+Typos in matrix code (i.e., commas instead of dots). Errors during compilation (failing build on Travis).
+Comments in source code for new program do not reflect program correctly.
